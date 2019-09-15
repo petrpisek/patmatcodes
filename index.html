@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            font-family: Consolas,monaco,monospace;
+			font-weight: bold;
+            background: black;
+            color: #555;
+			font-size: 1.5rem;
+        }
+
+        .cls {
+            color: rgb(72, 201, 176);
+        }
+
+        .kw {
+            color: rgb(86, 156, 214, 0.5);		
+        }
+
+        .kwc {
+            color: rgb(216, 160, 223);
+        }
+
+        .if {
+            color: rgb(184, 215, 163);
+        }
+
+        .par {
+            color: rgb(156, 220, 254);
+        }
+
+        .str {
+            color:rgb(214, 157, 133);
+        }
+		
+		.com {
+            color:rgb(87, 166, 74);
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+    <span class="kw">class</span> <span class="cls">PatMat.codes</span>
+    {
+        <span class="kw">public</span> Services</span> <span class="if">GetServices</span>()
+        {
+            <span class="kwc">return</span> <span class="kw">new</span> <span class="cls">Services</span>[] (
+                <span class="kw">new</span> <span class="cls">Service</span> { ServiceType = <span class="str">"Web Apps"</span> },
+                <span class="kw">new</span> <span class="cls">Service</span> { ServiceType = <span class="str">"Mobile Apps"</span> },
+                <span class="kw">new</span> <span class="cls">Service</span> { ServiceType = <span class="str">"Services"</span> },
+                <span class="kw">new</span> <span class="cls">Service</span> { ServiceType = <span class="str">"UI/UX design"</span> }
+            );
+        }
+		
+        <span class="kw">public</span> TechStack</span>[] <span class="if">GetTechStack</span>()
+        {
+            <span class="kwc">return</span> <span class="kw">new</span> <span class="cls">Services</span>[] (
+                <span class="kw">new</span> <span class="cls">TechStack</span> { Technology = <span class="str">"C#"</span> },
+                <span class="kw">new</span> <span class="cls">TechStack</span> { Technology = <span class="str">"ASP.NET"</span> },
+                <span class="kw">new</span> <span class="cls">TechStack</span> { Technology = <span class="str">"ReactJS"</span> },
+                <span class="kw">new</span> <span class="cls">TechStack</span> { Technology = <span class="str">"AngularJS"</span> }
+            );
+        }
+
+        <span class="kw">public</span> <span class="kw">string</span> <span class="if">AboutUs</span>()
+        {
+            <span class="kwc">return</span> <span class="str">"We are new, but we are good"</span>;
+        }
+
+        <span class="kw">public</span> <span class="cls">Contact</span> <span class="if">Contact</span>()
+        {
+            <span class="kwc">return</span> <span class="kw">new</span> <span class="cls">Contact</span>()
+            {
+                Email = <span class="str">   "info@patmat.codes"</span>,
+                Phone = <span class="str">   "+420 603 381 591"</span>,
+                Www = <span class="str">     "https://patmat.codes"</span>,
+                Address = <span class="str"> "Karlova 1, Karlovy Vary"</span>
+            };
+        }
+
+        <span class="kw">public</span> <span class="cls">Portfolio</span>[] <span class="if">GetPortfolio</span>()
+        {
+            <span class="kwc">throw</span> <span class="kw">new</span> <span class="cls">NotFoundException</span>(); <span class="com">//TODO: build portfolio</span>
+        }
+    }
+}
+</pre>
+</body>
+</html>
