@@ -48,22 +48,22 @@
     {
         <span class="kw">public</span> Services</span> <span class="if">GetServices</span>()
         {
-            <span class="kwc">return</span> <span class="kw">new</span> <span class="cls">Services</span>[] (
+            <span class="kwc">return</span> <span class="kw">new</span> <span class="cls">Service</span>[] {
                 <span class="kw">new</span> <span class="cls">Service</span> { ServiceType = <span class="str">"Web Apps"</span> },
                 <span class="kw">new</span> <span class="cls">Service</span> { ServiceType = <span class="str">"Mobile Apps"</span> },
                 <span class="kw">new</span> <span class="cls">Service</span> { ServiceType = <span class="str">"Services"</span> },
                 <span class="kw">new</span> <span class="cls">Service</span> { ServiceType = <span class="str">"UI/UX design"</span> }
-            );
+            };
         }
 		
         <span class="kw">public</span> TechStack</span>[] <span class="if">GetTechStack</span>()
         {
-            <span class="kwc">return</span> <span class="kw">new</span> <span class="cls">Services</span>[] (
+            <span class="kwc">return</span> <span class="kw">new</span> <span class="cls">TechStack</span>[] {
                 <span class="kw">new</span> <span class="cls">TechStack</span> { Technology = <span class="str">"C#"</span> },
                 <span class="kw">new</span> <span class="cls">TechStack</span> { Technology = <span class="str">"ASP.NET"</span> },
                 <span class="kw">new</span> <span class="cls">TechStack</span> { Technology = <span class="str">"ReactJS"</span> },
                 <span class="kw">new</span> <span class="cls">TechStack</span> { Technology = <span class="str">"AngularJS"</span> }
-            );
+            };
         }
 
         <span class="kw">public</span> <span class="kw">string</span> <span class="if">AboutUs</span>()
